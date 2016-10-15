@@ -1,0 +1,46 @@
+doctype html
+block vars
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    meta(http-equiv="X-UA-Compatible",content="chrome=1")
+    title= title
+
+    meta(name="description", content="REP Insurance contract allows you to secure the value of 100 REP")
+
+    //- Twitter Card data
+    meta(name="twitter:card", value="summary")
+
+    //- Open Graph data
+    meta(property="og:title", content=title)
+    meta(property="og:type", content="article")
+    if url 
+        meta(property="og:url", content="https://www.ethereum.org/"+url)
+    else
+        meta(property="og:url", content="https://www.ethereum.org/")
+
+    if image
+        meta(property="og:image", content="https://ethereum.org/images/social-"+image+".jpg")
+    else
+        meta(property="og:image", content="https://ethereum.org/images/wallpaper-homestead.jpg")
+
+    meta(property="og:image:width", content="500")
+    meta(property="og:image:height", content="500")
+
+    meta(property="og:description", content="REP Insurance contract allows you to secure the value of 100 REP")
+
+    link(href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,900,400italic' rel='stylesheet' type='text/css')
+    link(rel='stylesheet', href='/css/frontier.min.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css')
+  body
+    include ./includes/head.jade
+
+    block content
+
+    //include ./includes/footer.jade
+
+    script(src="/js/frontier.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js")
+
+   

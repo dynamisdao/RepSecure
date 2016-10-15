@@ -1,0 +1,31 @@
+extends layout
+
+block vars
+  - var title='REP Insurance Smart Contract'
+  - var url='token'
+
+block content
+  include mixins/recipes.jade
+  div.breadcrumb.animateme(data-when="enter", data-from="1", data-to="0.8", data-opacity="0", data-translatey="-20")
+    strong » Insure Your REP Tokens
+
+  div#tutorial-start.main-tutorial.token-tutorial.inner-header.inner-page.even
+    div.container
+      div.row
+        div.col-md-6.tutorial.scrollme          
+          div.header-title
+            h3.animateme(data-when="exit", data-from="0", data-to="0.5", data-translatey="200", data-opacity="0", data-easing="linear") Insure your 
+            h2.animateme(data-when="exit", data-from="0", data-to="1", data-translatey="400", data-easing="linear") REP tokens
+            h3.animateme(data-when="exit", data-from="0", data-to="0.5", data-translatey="200", data-opacity="0", data-easing="linear") with Smart Contract
+          
+
+  div.main-tutorial.inner-tutorial
+    div.container
+      div.row.scrollme                
+        +toc
+        div.col-md-12
+          include:md content/token.md
+          a.button.small(href='https://github.com/AnthonyAkentiev/REP_InsuraceWebSite/edit/master/views/content/token.md') Improve this page
+
+
+
