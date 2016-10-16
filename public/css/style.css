@@ -414,7 +414,7 @@ body {
 .inner-header.token-tutorial {
 	background-attachment: initial;
 	/*background-image: url("../images/token-bg.jpg");*/
-	background-image: url("../images/bg-1-full.jpg");
+	background-image: url("../images/bg-2-full.jpg");
 }
 
 .inner-header.token-tutorial h2 ,
@@ -1467,7 +1467,7 @@ footer {
 }
 
 .inner-header {
-	padding: 100px;
+	/*padding: 100px;*/
 	background: #102026;
 }
 
