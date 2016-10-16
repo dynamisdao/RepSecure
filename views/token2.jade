@@ -26,33 +26,56 @@ block content
           br
 
           // Controls
-          div.panel-control
-            p
-              | Current ETH price: 
-              strong#eth-price !{ethPrice}
-            p
-              | Current Rep price: 
-              strong#price !{repPrice}
-            p
-              | Ammount of Rep you want to insure: 
-              select.form-control#amount
-                option(value=0) 100 Rep
-                option(value=1) 500 Rep
-                option(value=2) 1000 Rep
-            p
-              | Price of Rep on Feb 13th, 2017: 
-              input.form-control(type="text", value="", disabled)#future-price-edit
-            p
-              input(type="range", min="2", max=repPrice, step="0.25", value=initialFuturePrice)#future-price 
-            p
-              | Cost of purchasing insurance:
-              input.form-control(type="text", value="$xxx", disabled)#cost
-            p
-              | Potential losses if you don’t purchase a policy: 
-              input.form-control(type="text", disabled)#losses
-            p
-              | Potential savings if you do purchase a policy:
-              input.form-control(type="text", disabled)#savings
+          div.panel-heading.row
+            div.col-md-9
+              p
+                | Current ETH price: 
+            div.col-md-3
+              p.strong
+                strong#eth-price !{ethPrice}
+            div.col-md-9
+              p
+                | Current Rep price: 
+            div.col-md-3
+              p.strong
+                strong#price !{repPrice}
+          div.panel-control.row
+            div.col-md-9
+              p
+                | Ammount of Rep you want to insure: 
+            div.col-md-3
+              div.right-width
+                select.form-control#amount
+                  option(value=0) 100 Rep
+                  option(value=1) 500 Rep
+                  option(value=2) 1000 Rep
+            div.col-md-9
+              p
+                | Price of Rep on Feb 13th, 2017: 
+            div.col-md-3
+              div.right-width
+                input.form-control(type="text", value="", disabled)
+            div.col-md-12 
+              p
+                input(type="range", min="2", max=repPrice, step="0.25", value=initialFuturePrice)#future-price 
+            div.col-md-9
+              p
+                | Cost of purchasing insurance:
+            div.col-md-3
+              div.right-width
+                input.form-control(type="text", value="$xxx", disabled)#cost
+            div.col-md-9
+              p
+                | Potential losses if you don’t purchase a policy: 
+            div.col-md-3
+              div.right-width
+                input.form-control(type="text", disabled)#losses
+            div.col-md-9
+              p
+                | Potential savings if you do purchase a policy:
+            div.col-md-3
+              div.right-width
+                input.form-control(type="text", disabled)#savings
 
           // Main:
           include:md content/token2.md
@@ -74,25 +97,37 @@ block content
           include:md content/token2_end.md
 
           // Form
-          div.panel-control
-            p
-              | Current Rep price: 
-              strong#price !{repPrice}
-            p
-              | Ammount of Rep insured: 
-              select.form-control#amount-to-insure
-                option(value=0) 100 Rep
-                option(value=1) 500 Rep
-                option(value=2) 1000 Rep
-            p
-              | Current address holding the Rep (must be same address from which purchase price is paid):
-              input.form-control(type="text", value="")#current-address
-            p
-              | Text ID hash of transaction:
-              input.form-control(type="text", value="")#tx-hash
-
-          a.button(href='') Insure
-
+          div.panel-control.row
+            div.col-md-9
+              p
+                | Current Rep price: 
+            div.col-md-3
+              p.strong
+                strong#price !{repPrice}
+            div.col-md-9
+              p
+                | Ammount of Rep insured: 
+            div.col-md-3
+              div.right-width
+                select.form-control#amount-to-insure
+                  option(value=0) 100 Rep
+                  option(value=1) 500 Rep
+                  option(value=2) 1000 Rep
+            div.col-md-12
+              p
+                | Current address holding the Rep (must be same address from which purchase price is paid):
+            div.col-md-12
+              div.full-width
+                input.form-control(type="text", value="")#current-address
+            div.col-md-12
+              p
+                | Text ID hash of transaction:
+            div.col-md-12
+              div.full-width
+                input.form-control(type="text", value="")#tx-hash
+            div.col-md-12  
+              a.button(href='') Insure
+          br
           //a.button.small(href='https://github.com/AnthonyAkentiev/REP_InsuraceWebSite/edit/master/views/content/token2.md') Improve this page
 
 
