@@ -469,7 +469,8 @@ a.button {
 	padding: 10px;
 	clear: right;
 	margin: 60px auto 30px;
-	background: #4A90E2;
+	/*background: #4A90E2;*/
+	background: rgb(69, 72, 71);
 	color: #F5F5F5;
 	font-weight: 600;
 	border-radius: 3px;
