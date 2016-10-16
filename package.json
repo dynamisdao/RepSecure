@@ -1,5 +1,5 @@
 {
-  "name": "ethereum.org",
+  "name": "repsecure.net",
   "description": "REP Insurace",
   "version": "0.9.0",
   "private": true,
@@ -40,6 +40,12 @@
       "name": "Marian Oancea",
       "email": "marian@ethdev.com",
       "url": "https://github.com/cubedro"
+    },
+
+    {
+      "name": "Anton Akentiev",
+      "email": "tony@chain.cloud",
+      "url": "https://github.com/anthonyakentiev"
     }
   ],
   "license": "LGPL-3.0",

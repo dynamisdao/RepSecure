@@ -413,7 +413,8 @@ body {
 
 .inner-header.token-tutorial {
 	background-attachment: initial;
-	background-image: url("../images/token-bg.jpg");
+	/*background-image: url("../images/token-bg.jpg");*/
+	background-image: url("../images/bg-1-full.jpg");
 }
 
 .inner-header.token-tutorial h2 ,
