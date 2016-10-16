@@ -5,10 +5,10 @@ function recalculate(){
 
   // These from JSON:
   var ethPrice = Number($('#eth-price').text()).toFixed(2);
-  ethPrice = ethPrice.split('$').join('');
+  ethPrice = Number(String(ethPrice).substr(1));
 
   var price = Number($('#price').text()).toFixed(2);
-  price = price.split('$').join('');
+  price = Number(String(price).substr(1));
   
   // These from user:
   var amntSel = $('#amount').val();
