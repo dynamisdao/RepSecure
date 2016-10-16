@@ -1035,6 +1035,34 @@ a.button.ethereum-wallet.win64 {
 	color: #eee;
 }
 
+.panel-control {
+	background-color: #fff;
+	border-radius: 2px;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 0px;
+    margin: 0px 20px;
+
+}
+.form-control {
+	border-radius: 2px;
+    border: 2px solid #C3CCDB;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    display: block;
+    width: 120px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
 /* FIGURES */
 
 figure.ethereum-network {
