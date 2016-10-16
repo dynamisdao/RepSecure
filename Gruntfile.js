@@ -13,8 +13,9 @@ var vendor = [
 	'public/js/bitcoinjs-min.js',
 	'public/js/underscore-min.js',
 	'public/js/numeral.js',
+	'public/js/validation.js',
 	'public/js/jquery.tableofcontents.min.js',
-     'public/js/token.js'
+    'public/js/token.js'
 ];
 
 var styles = [

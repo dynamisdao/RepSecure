@@ -31,14 +31,12 @@ block content
               p
                 | Current ETH price: 
             div.col-md-3
-              p.strong
                 strong $
                 strong#eth-price !{ethPrice}
             div.col-md-9
               p
                 | Current Rep price: 
             div.col-md-3
-              p.strong
                 strong $
                 strong#price !{repPrice}
           div.panel-control.row
@@ -136,7 +134,7 @@ block content
             br
             div.modal#modal-insure
               div.modal-content
-                p.close
+                a.close(href="", onClick="handleCloseModal(event)")
                   | x
                 p
                   | Contract deployed.

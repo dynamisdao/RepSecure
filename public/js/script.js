@@ -48,8 +48,6 @@ $(document).ready(function() {
 
 });
 
-  
-
 
 // WARNING: I haven't yet tested this
 // - It's likely that it will strip events upon shuffling
