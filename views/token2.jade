@@ -28,19 +28,20 @@ block content
           br
 
           // Controls
-          div.panel-control.row
+          div.panel-heading.row
             div.col-md-9
               p
                 | Current ETH price: 
             div.col-md-3
-              p
+              p.strong
                 strong#eth-price !{ethPrice}
             div.col-md-9
               p
                 | Current Rep price: 
             div.col-md-3
-              p
+              p.strong
                 strong#price !{repPrice}
+          div.panel-control.row
             div.col-md-9
               p
                 | Ammount of Rep you want to insure: 
@@ -55,7 +56,7 @@ block content
                 | Price of Rep on Feb 13th, 2017: 
             div.col-md-3
               div.right-width
-                input.form-control(type="text", value="", disabled)#future-price-edit
+                input.form-control(type="text", value="", disabled)
             div.col-md-12 
               p
                 input(type="range", min="2", max=repPrice, step="0.25", value=initialFuturePrice)#future-price 
@@ -103,7 +104,7 @@ block content
               p
                 | Current Rep price: 
             div.col-md-3
-              p
+              p.strong
                 strong#price !{repPrice}
             div.col-md-9
               p

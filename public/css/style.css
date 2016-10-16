@@ -6,8 +6,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-hr {
-	border-color: #f8ead1;
+.panel-control hr {
+	margin: 35px;
+	border-color: #F5F5F5;
 	clear: both;
 }
 
@@ -46,7 +47,7 @@ h6 {
 }
 
 p {
-	margin: 10px 0 15px 0;
+	margin: 10px 0 10px 0;
 }
 
 a {
@@ -1027,8 +1028,18 @@ a.button.ethereum-wallet.win64 {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
     padding: 20px 0px;
     margin: 0px 20px;
-
 }
+
+.panel-heading {
+	background-color: #fafafa;
+    border-bottom: none;
+    margin: 0px 20px;
+}
+
+.strong {
+	padding: 0px 18px !important;
+}
+
 .form-control {
 	border-radius: 2px;
     border: 1px solid #C3CCDB;
