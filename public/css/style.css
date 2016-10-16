@@ -492,8 +492,8 @@ a.button:hover {
 	margin-bottom: 32px;
 	cursor: hand;
 	cursor: pointer;	
-	transition: box-shadow 0.3s, border-bottom 0.3s, top 0.3s, margin-bottom 0.3s;		
-	transition-timing-function: ease-in;	
+	/*transition: box-shadow 0.3s, border-bottom 0.3s, top 0.3s, margin-bottom 0.3s;*/
+	/*transition-timing-function: ease-in;*/
 }
 
 input.button:active, 
