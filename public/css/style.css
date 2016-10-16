@@ -236,7 +236,6 @@ body {
 
 .main-tutorial p {
 	padding: 0 20px 0;
-	text-align: left;
 }
 
 .center-align {
@@ -305,10 +304,6 @@ body {
 
 .main-tutorial h2 + h3 .number {
 	top: 0;
-}
-
-.main-tutorial .row {
-	padding: 80px 0;
 }
 
 .number {
@@ -467,7 +462,7 @@ a.button {
 	max-width: 400px;
 	padding: 10px;
 	clear: right;
-	margin: 60px auto 30px;
+	margin: 30px auto 10px;
 	background: #4A90E2;
 	color: #F5F5F5;
 	font-weight: 600;
@@ -1041,16 +1036,22 @@ a.button.ethereum-wallet.win64 {
     color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
     display: block;
-    width: 120px;
+    width: 100%;
     height: 34px;
     padding: 6px 12px;
     font-size: 16px;
     line-height: 1.42857143;
     color: #555;
-    background-color: #fff;
     background-image: none;
-    display: inline-block;
     margin-left: 5px;
+}
+
+.full-width {
+	padding: 0 15px;
+}
+
+.right-width {
+	padding-right:  15px;
 }
 
 /* FIGURES */
@@ -1383,6 +1384,7 @@ figure.ethereum-logo {
 
 .main-tutorial .row.start-menu {
 	padding-top: 0;
+	padding: 80px 0;
 }
 
 .main-tutorial .note {
@@ -2082,5 +2084,5 @@ button.gitter-chat-embed-action-bar-item.gitter-chat-embed-action-bar-item-colla
 }
 
 #future-price {
-     margin-bottom: 30px;
+     margin: 30px 0px;
 }
