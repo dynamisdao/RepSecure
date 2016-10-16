@@ -1036,7 +1036,7 @@ a.button.ethereum-wallet.win64 {
 }
 .form-control {
 	border-radius: 2px;
-    border: 2px solid #C3CCDB;
+    border: 1px solid #C3CCDB;
     box-shadow: none;
     color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
