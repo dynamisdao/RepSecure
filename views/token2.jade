@@ -99,38 +99,47 @@ block content
           include:md content/token2_end.md
 
           // Form
-          div.panel-control.row
-            div.col-md-9
-              p
-                | Current Rep price: 
-            div.col-md-3
-              p.strong
-                strong $
-                strong#price !{repPrice}
-            div.col-md-9
-              p
-                | Ammount of Rep insured: 
-            div.col-md-3
-              div.right-width
-                select.form-control#amount-to-insure
-                  option(value=0) 100 Rep
-                  option(value=1) 500 Rep
-                  option(value=2) 1000 Rep
-            div.col-md-12
-              p
-                | Current address holding the Rep (must be same address from which purchase price is paid):
-            div.col-md-12
-              div.full-width
-                input.form-control(type="text", value="")#current-address
-            div.col-md-12
-              p
-                | Text ID hash of transaction:
-            div.col-md-12
-              div.full-width
-                input.form-control(type="text", value="")#tx-hash
-            div.col-md-12  
-              a.button(href='') Insure
-          br
+          form#form-insure
+            div.panel-control.row
+              div.col-md-9
+                p
+                  | Current Rep price: 
+              div.col-md-3
+                p.strong
+                  strong $
+                  strong#price !{repPrice}
+              div.col-md-9
+                p
+                  | Ammount of Rep insured: 
+              div.col-md-3
+                div.right-width
+                  select.form-control#amount-to-insure
+                    option(value=0) 100 Rep
+                    option(value=1) 500 Rep
+                    option(value=2) 1000 Rep
+              div.col-md-12
+                p
+                  | Current address holding the Rep (must be same address from which purchase price is paid):
+              div.col-md-12
+                div.full-width
+                  input.form-control(type="text", value="", onKeypress="clearValidationAddress()")#current-address
+                  label.error#error-current-address
+              div.col-md-12
+                p
+                  | Text ID hash of transaction:
+              div.col-md-12
+                div.full-width
+                  input.form-control(type="text", value="", onKeypress="clearValidationTxHash()")#tx-hash
+                  label.error#error-tx-hash
+              div.col-md-12  
+                a.button(href="", onClick="validateInsureForm(event)")#insure Insure
+            br
+            div.modal#modal-insure
+              div.modal-content
+                p.close
+                  | x
+                p
+                  | Contract deployed.
           //a.button.small(href='https://github.com/AnthonyAkentiev/REP_InsuraceWebSite/edit/master/views/content/token2.md') Improve this page
 
 
