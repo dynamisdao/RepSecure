@@ -486,24 +486,15 @@ a.button {
 	text-decoration: none;
 	font-weight: 600;
 	-webkit-appearance: none;
-	border-bottom: solid 3px #2F6DB5;
-	top: -3px;
 	box-shadow: rgba(0,0,0,0.1) 0 6px 1px;
-	/*transition: box-shadow 0.6s, border-bottom 0.6s, top 0.6s, margin-bottom 0.6s;*/
-	/*transition-timing-function: ease-out;*/
 }
 
 input.button:hover, 
 button:hover,
 a.button:hover {
-	border-bottom: solid 1px #2F6DB5;
-	top: -1px;
 	box-shadow: rgba(0,0,0,0.05) 0 2px 1px;
-	margin-bottom: 32px;
 	cursor: hand;
 	cursor: pointer;	
-	/*transition: box-shadow 0.3s, border-bottom 0.3s, top 0.3s, margin-bottom 0.3s;*/
-	/*transition-timing-function: ease-in;*/
 }
 
 input.button:active, 
