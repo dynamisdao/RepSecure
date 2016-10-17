@@ -31,6 +31,7 @@ function recalculate(){
      losses = maxReturnLoss;
   }
 
+  /*
   $('.rep-count').text(amnt);
   $('.rep-price').text('$' + price);
   $('.ins-cost').text('$' + costInEth);
@@ -38,6 +39,7 @@ function recalculate(){
   $('.current-diff').text('$' + currentDiff);
   $('.return-losses').text('$' + losses);
   $('.additional-reps').text(additionalReps);
+  */
 
   // 1 - future price
   $('#future-price-edit').val('$' + futurePrice);
