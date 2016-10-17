@@ -2,7 +2,7 @@
 const modal = document.getElementById('modal-insure');
 
 function validateInsureForm(event) {
-    let text = "This field is required";
+    var text = "This field is required";
 
     const current_address = document.getElementById("current-address").value;
     const tx_hash = document.getElementById("tx-hash").value;
