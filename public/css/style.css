@@ -280,7 +280,6 @@ body {
 .main-tutorial h3 {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', arial,  sans-serif;
 	font-size: 30px;
-	font-weight: 400;
 	color: #354049;
 	background: transparent;
 	max-width: 400px;
@@ -1107,6 +1106,12 @@ a.button.ethereum-wallet.win64 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.term,
+.main,
+.end {
+	display: none;
 }
 
 /* FIGURES */

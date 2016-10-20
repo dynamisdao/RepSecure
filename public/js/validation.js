@@ -36,3 +36,13 @@ function handleCloseModal() {
     document.getElementById("form-insure").reset();
     event.preventDefault();
 }
+
+// Show block on token2_page
+function showBlock(target) {
+    const display =  window.getComputedStyle(document.getElementById(target), null).display;
+    if (display == 'none') {
+        document.getElementById(target).style.display = 'block';
+    } else if (display == 'block') {
+        document.getElementById(target).style.display = 'none';
+    }
+}

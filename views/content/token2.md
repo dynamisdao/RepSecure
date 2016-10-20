@@ -1,5 +1,3 @@
-### How it works
-
 Insurance for standard contracts is purchased for units of 100 Rep (other sizes available below).  If the current price of Rep is $6 you pay 1 ETH into the contract to secure that the future price of 100 Rep will be above $6 at block 3141592 which would likely be mined on or prior to Feb. 13th. 2017 Rep secure pays 200 Rep collateral into the contract to secure a price above a floor of 2 dollars.
 
 If the price of Rep at block 3141592 is above the current market price of $6 the collateral is returned to Rep secure and the contract terminates.
