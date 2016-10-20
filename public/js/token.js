@@ -4,8 +4,8 @@ function recalculate(){
   var additionalReps = 200;
 
   // These from JSON:
-  var ethPrice = Number($('#eth-price').text()).toFixed(2);
-  var price = Number($('#price').text()).toFixed(2);
+  var ethPrice = Number($('#eth-price').text()).toFixed(4);
+  var price = Number($('#price').text()).toFixed(4);
   
   // These from user:
   var amntSel = $('#amount').val();
