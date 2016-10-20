@@ -45,14 +45,14 @@ function recalculate(){
   $('#future-price-edit').val('$' + futurePrice);
 
   // 2 - cost
-  cost = Number(cost).toFixed(2);
+  cost = Number(cost).toFixed(4);
   $('#cost').val('$' + cost);
 
   // 3 - losses
   if(losses<=0.0){
      losses = 0.0;
   }
-  losses = Number(losses).toFixed(2);
+  losses = Number(losses).toFixed(4);
   $('#losses').val('$' + losses);
 
   // 4 - saving 
@@ -60,7 +60,7 @@ function recalculate(){
   if(savings<=0.0){
      savings = 0.0;
   }
-  savings = Number(savings).toFixed(2);
+  savings = Number(savings).toFixed(4);
   $('#savings').val('$' + savings);
 }
 
