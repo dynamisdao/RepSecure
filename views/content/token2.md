@@ -37,7 +37,7 @@ Only two of these three parties are allowed to recieve the collateral in full, n
 
 For every 100 Rep insured Rep-secure deposits a collateral amout determined by the formula: (CurrentRepPrice * 50) – 100 Rep.
 
-### Terms and conditions:
+### Terms and conditions
 
 The terms of the contract are enforced using an Ethereum multi-sig which directs the entire Rep escrow to either the insured party or back to Rep-secure at a future date after block 3141592.  A weighted weekly average for the last 7 days prior to block 3141592 is used to determine the price.  All differences in price are calculated using dollars and are entirely reliant upon using an average of coinmarketcap and poloniex as a price feed.  Escrow agents are required to manually retrieve this data and record their findings and enforce the correct payment in Ether be made from Rep-secure to policyholders which reconciles price differences between the insured price and the price of Rep at block 3141592. Correct payment of the price difference in Ether allows Rep-secure to redeem the Rep used as collateral from the contract.  Payments in Ether required to make up the difference between the insured price and the price at block 3141592 will be required to use the Ether price at block 3141592 as reported by coinmarketcap.
 
