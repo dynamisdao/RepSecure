@@ -1,5 +1,3 @@
-### How does the contract work?
-
 If the current price of Rep is $6 you pay 1 ETH into a smart contract to secure that the future price of 100 Rep will be above $6 by Feb. 13th 2017.  The easiest way to specify a future date is to specify a block height.  The block height 3141592 will likely be mined on or prior to Feb. 13th 2017.  At this block height if the price of Rep is below the purchase price then the difference is paid out to policyholders.
 
 **To protect the value of your 100 Rep, Rep-secure pays 200 Rep collateral into an ethereum smart contract.** So long as Reputation does not fall below a floor price of $2 then reputation token holders are fully protected against any losses due to a change in price.  If the price does fall below $2 then only a portion of people's losses would be mitigated.  This collateral protects policyholders in the following ways:

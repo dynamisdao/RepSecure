@@ -1,9 +1,3 @@
-### What is REP Secure?
-
-**Rep-secure** is a multi-signature financial contract that allows you to secure the current market price of your reputation tokens at a future date.  It uses reputation tokens as collateral to secure an insurance contract which guarantees policyholders can recieve compensation if the price of Rep on Feb 13th is lower than the price recorded at the time a policy is purchased.
-
-### Why does insuring tokens have value for the crypto-asset space?
-
 * Provides factual attestation that promoters cannot sell their tokens before a certain date. 
 * Contract guarantees policyholders can sell their tokens before larger holders can exit the market.
 * A token can lose more than half of its value before an insured policyholder would be impacted by these losses.

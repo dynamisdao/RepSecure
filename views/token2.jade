@@ -22,7 +22,17 @@ block content
       div.row.scrollme                
         +toc
         div.col-md-12
-          include:md content/token2_start.md
+
+          h3
+            |What is REP Secure?
+          p
+            strong Rep-secure
+            | is a multi-signature financial contract that allows you to secure the current market price of your reputation tokens at a future date.  It uses reputation tokens as collateral to secure an insurance contract which guarantees policyholders can recieve compensation if the price of Rep on Feb 13th is lower than the price recorded at the time a policy is purchased.
+
+          a(onClick="showBlock('start')")
+            h3|Why does insuring tokens have value for the crypto-asset space?
+          div.start#start
+            include:md content/token2_start.md
           br
 
           // Controls
@@ -79,7 +89,7 @@ block content
 
           a(onClick="showBlock('main')")
             h3
-              |How it works
+              |How does the contract work?
 
           div.main#main
             // Main:

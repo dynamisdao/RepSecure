@@ -1120,7 +1120,8 @@ a.button.ethereum-wallet.win64 {
 
 .term,
 .main,
-.end {
+.end,
+.start {
 	display: none;
 }
 
@@ -1510,7 +1511,6 @@ footer {
 
 .inner-header h3 {
 	font-size: 40px;
-	font-weight: 300;
 	margin: 0;
 	padding: 15px 20px 0;
 	max-width: none;
