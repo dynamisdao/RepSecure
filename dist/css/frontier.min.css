@@ -292,7 +292,6 @@ body {
 	font-size: 30px;
 	color: #354049;
 	background: transparent;
-	max-width: 400px;
 	padding: 60px 20px 30px;
 	position: relative;
 }
@@ -1118,10 +1117,11 @@ a.button.ethereum-wallet.win64 {
     cursor: pointer;
 }
 
-.term,
-.main,
-.end,
-.start {
+.text_1,
+.text_2,
+.text_3,
+.text_4,
+.end {
 	display: none;
 }
 

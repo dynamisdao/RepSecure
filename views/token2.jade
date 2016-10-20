@@ -29,9 +29,8 @@ block content
             strong Rep-secure
             | is a multi-signature financial contract that allows you to secure the current market price of your reputation tokens at a future date.  It uses reputation tokens as collateral to secure an insurance contract which guarantees policyholders can recieve compensation if the price of Rep on Feb 13th is lower than the price recorded at the time a policy is purchased.
 
-          a(onClick="showBlock('start')")
-            h3|Why does insuring tokens have value for the crypto-asset space?
-          div.start#start
+          h3|Why does insuring tokens have value for the crypto-asset space?
+          div
             include:md content/token2_start.md
           br
 
@@ -87,42 +86,54 @@ block content
               div.right-width
                 input.form-control(type="text", disabled)#savings
 
-          a(onClick="showBlock('main')")
+          a(onClick="showBlock('text_1')")
             h3
               |How does the contract work?
+          div.text_1#text_1
+            // How does the contract work:
+            include:md content/token2_text_1.md
 
-          div.main#main
-            // Main:
-            include:md content/token2.md
+          a(onClick="showBlock('text_2')")
+            h3
+              |Instructions.
+          div.text_2#text_2
+            // Instructions
+            include:md content/token2_text_2.md
 
-            // Instructions:
-            p#std-contract
-              strong Standard contracts 
-              | units of exactly 100 Rep.  To insure 100 Rep send exactly 100 Rep to an address which holds at least 1 ETH + enough gas to process all transaction fees for executing the contract.  I recommend at least 1.2 ETH.  From that address send 1 ETH to the contract along with the contract code which will initiate your policy.  Once you are informed of the text ID (hash) of your transaction place your text ID (hash) in the form at the bottom.  The price of Rep which is insured is determined by the time when the form is submitted not the time when the purchase price is sent to the contract.  Do not remove your 100 Rep until after Dec. 15th or the contract will be void.
+          a(onClick="showBlock('text_3')")
+            h3
+              |How does the escrow work?
+          div.text_3#text_3
+            // How does the escrow work?
+            include:md content/token2_text_3.md
 
-            p(hidden)#fiat-contract
-              strong Fiat contracts 
-              | insure units of exactly 500 Rep.  To insure 500 Rep send exactly 500 Rep to an address which holds at least 5 ETH + enough gas to process all transaction fees for executing the contract.  I recommend at least 5.2 ETH.  From that address send 5 ETH to the contract along with the contract code which will initiate your policy.  Once you are informed of the text ID (hash) of your transaction place your text ID (hash) in the form at the bottom.  The price of Rep which is insured is determined by the time when the form is submitted not the time when the purchase price is sent to the contract.  Do not remove your 500 Rep until after Dec. 15th or the contract will be void. 
+          a(onClick="showBlock('text_4')")
+            h3
+              |Terms and conditions
+          div.text_4#text_4
+            // Terms and conditions
+            include:md content/token2_text_4.md
 
-            p(hidden)#grand-contract
-              strong Grand contracts 
-              | insure units of exactly 1000 Rep.  To insure 1000 Rep send exactly 1000 Rep to an address which holds at least 10 ETH + enough gas to process all transaction fees for executing the contract.  I recommend at least 10.2 ETH.  From that address send 10 ETH to the contract along with the contract code which will initiate your policy.  Once you are informed of the text ID (hash) of your transaction place your text ID (hash) in the form at the bottom.  The price of Rep which is insured is determined by the time when the form is submitted not the time when the purchase price is sent to the contract. Do not remove your 1000 Rep until after Dec. 15th or the contract will be void.
+
+            //- // Instructions:
+            //- p#std-contract
+            //-   strong Standard contracts 
+            //-   | units of exactly 100 Rep.  To insure 100 Rep send exactly 100 Rep to an address which holds at least 1 ETH + enough gas to process all transaction fees for executing the contract.  I recommend at least 1.2 ETH.  From that address send 1 ETH to the contract along with the contract code which will initiate your policy.  Once you are informed of the text ID (hash) of your transaction place your text ID (hash) in the form at the bottom.  The price of Rep which is insured is determined by the time when the form is submitted not the time when the purchase price is sent to the contract.  Do not remove your 100 Rep until after Dec. 15th or the contract will be void.
+
+            //- p(hidden)#fiat-contract
+            //-   strong Fiat contracts 
+            //-   | insure units of exactly 500 Rep.  To insure 500 Rep send exactly 500 Rep to an address which holds at least 5 ETH + enough gas to process all transaction fees for executing the contract.  I recommend at least 5.2 ETH.  From that address send 5 ETH to the contract along with the contract code which will initiate your policy.  Once you are informed of the text ID (hash) of your transaction place your text ID (hash) in the form at the bottom.  The price of Rep which is insured is determined by the time when the form is submitted not the time when the purchase price is sent to the contract.  Do not remove your 500 Rep until after Dec. 15th or the contract will be void. 
+
+            //- p(hidden)#grand-contract
+            //-   strong Grand contracts 
+            //-   | insure units of exactly 1000 Rep.  To insure 1000 Rep send exactly 1000 Rep to an address which holds at least 10 ETH + enough gas to process all transaction fees for executing the contract.  I recommend at least 10.2 ETH.  From that address send 10 ETH to the contract along with the contract code which will initiate your policy.  Once you are informed of the text ID (hash) of your transaction place your text ID (hash) in the form at the bottom.  The price of Rep which is insured is determined by the time when the form is submitted not the time when the purchase price is sent to the contract. Do not remove your 1000 Rep until after Dec. 15th or the contract will be void.
 
           a(onClick="showBlock('end')")
             h3
               |Cost of purchasing insurance
-
           div.end#end
             // End:
             include:md content/token2_end.md
-
-          a(onClick="showBlock('term')")
-            h3
-              |Terms and Conditions
-
-          div.term#term
-            //terms:
-            include:md content/token2_terms.md
 
           h3
             |Let's Go!
